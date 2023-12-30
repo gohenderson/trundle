@@ -1,0 +1,14 @@
+syntax = "proto3";
+package trundleapi;
+
+service TrundleApi {
+    rpc GenerateBlock (GenerateBlockRequest) returns (GenerateBlockResponse);
+}
+
+message GenerateBlockRequest {
+    string name = 1;
+}
+
+message GenerateBlockResponse {
+    string message = 1;
+}
